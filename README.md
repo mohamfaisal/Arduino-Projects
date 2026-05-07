@@ -15,7 +15,7 @@ Welcome to my repository of hardware, sensor, and robotics experiments! This col
 This is the capstone project of the repository. It integrates environmental sensors with mechanical actuators to solve a real-world problem. By reading live data from a rain detection module, the Arduino automatically triggers a servo motor mechanism to protect items from getting wet the moment rain is detected.
 
 * 📁 [View Final Project Code](./Final%20Project)
-* 🎥 [Watch the Final Project Demonstration](INSERT_YOUR_VIDEO_LINK_HERE)
+* 🎥 [Watch the Final Project Demonstration](https://youtu.be/iIxWFhKOmhs?si=4lOB5eYE9MlpZH6v)
 
 ---
 
@@ -24,22 +24,22 @@ This is the capstone project of the repository. It integrates environmental sens
 A series of individual hardware experiments exploring different sensors, actuators, and communication protocols.
 
 * **Experiment 1: Ultrasonic Sensor & Buzzer** * A distance-based proximity alarm triggering LEDs and a buzzer based on spatial thresholds.
-  * 🎥 [Watch Demonstration](INSERT_YOUR_VIDEO_LINK_HERE)
+  * 🎥 [Watch Demonstration](https://youtu.be/rPk_EJ_RRmY?si=Sl_XHk554TWn1l3H)
 
 * **Experiment 2: Rain Sensor Trigger with LED** * Basic environmental moisture detection, using water conductivity to trigger visual alerts.
-  * 🎥 [Watch Demonstration](INSERT_YOUR_VIDEO_LINK_HERE)
+  * 🎥 [Watch Demonstration](https://youtu.be/g3LPpoOZagc?si=ARE5iJEVBSGaduL_)
 
 * **Experiment 3: Servo Motor Controlled by Potentiometer** * Processing analog inputs to achieve precision mechanical control over a micro-servo.
-  * 🎥 [Watch Demonstration](INSERT_YOUR_VIDEO_LINK_HERE)
+  * 🎥 [Watch Demonstration](https://youtu.be/7NGs-EaJGZM?si=5-9oCyrAIZfN51GL)
 
 * **Experiment 4: Button Count LCD Display** * Tracking digital inputs and interfacing with external screens to display live tracking data.
-  * 🎥 [Watch Demonstration](INSERT_YOUR_VIDEO_LINK_HERE)
+  * 🎥 [Watch Demonstration](https://youtu.be/L7Ny_FgSS2g?si=_6Lf5kBiCquzHrUp)
 
 * **Experiment 5: Radar System Using Ultrasonic Sensor** * Integrates Arduino hardware with Processing software to map out physical surroundings visually on a screen.
-  * 📁 [View Source Code](./5%20-%20Radar%20System%20Using%20Ultrasonic%20Sensor) | 🎥 [Watch Demonstration](INSERT_YOUR_VIDEO_LINK_HERE)
+  * 📁 [View Source Code](./5%20-%20Radar%20System%20Using%20Ultrasonic%20Sensor) | 🎥 [Watch Demonstration](https://youtu.be/fTRtPusO76I?si=pAlA2GNRNbGBkZLF)
 
 * **Experiment 6: Controlling LED Lights Through Fingers** * Combines computer vision (Python) with serial communication to control physical Arduino hardware using live hand gestures.
-  * 📁 [View Source Code](./6%20-%20Controlling%20LED%20Lights%20Through%20Fingers) | 🎥 [Watch Demonstration](INSERT_YOUR_VIDEO_LINK_HERE)
+  * 📁 [View Source Code](./6%20-%20Controlling%20LED%20Lights%20Through%20Fingers) | 🎥 [Watch Demonstration](https://youtu.be/JXiN9iIyUys?si=i09Pd3VWupFERArt)
 
 ---
 
