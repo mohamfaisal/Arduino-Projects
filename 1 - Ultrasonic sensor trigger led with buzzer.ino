@@ -1,4 +1,4 @@
-// Pin configurations
+// Pin configuration
 const int TRIG_PIN = 6; 
 const int ECHO_PIN = 7; 
 const int LED_PIN  = 3; 

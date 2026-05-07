@@ -5,7 +5,7 @@ int rain_state      = LOW;    // Variable to store the current sensor reading
 int prev_rain_state = LOW;    // Variable to store the previous sensor reading
 
 void setup() {
-  Serial.begin(9600);                // Initialize Serial Monitor for data logging
+  Serial.begin(9600);                // Initialize Serial Monitor for data loggings
   pinMode(RAIN_SENSOR_PIN, INPUT);   // Configure the rain sensor pin as an input
   pinMode(LED_PIN, OUTPUT);          // Configure the LED pin as an output
 }

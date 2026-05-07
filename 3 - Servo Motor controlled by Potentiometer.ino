@@ -1,4 +1,4 @@
-#include <Servo.h> // Includes the library needed for servo motor control
+#include <Servo.h> // Include the library needed for servo motor control
 
 Servo myServo;  // Creates a servo object to control a physical servo
 

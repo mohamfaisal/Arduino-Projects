@@ -30,7 +30,7 @@ void setup() {
 }
 
 void loop() {
-  // IMPORTANT: Must call loop() to allow ezButton to process the physical pin state
+  // IMPORTANT: Must call loop() to allow Button to process the physical pin state
   button.loop(); 
 
   // Retrieve the current press count from the ezButton object
