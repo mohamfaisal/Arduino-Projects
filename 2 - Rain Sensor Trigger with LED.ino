@@ -1,30 +1,28 @@
-#define RAIN_SENSOR_PIN  A0   // Sensor output connected to Analog Pin A0
-#define LED_PIN          7    // LED connected to Digital Pin 7
-
-int rain_state      = LOW;    // Variable to store the current sensor reading
-int prev_rain_state = LOW;    // Variable to store the previous sensor reading
+// Pin configuration
+const int RAIN_SENSOR_PIN = A0;  // Connected to D0 on the sensor module
+const int LED_PIN = 6;           // Matches the diagram (changed from 7 to 6)
 
 void setup() {
-  Serial.begin(9600);                // Initialize Serial Monitor for data loggings
-  pinMode(RAIN_SENSOR_PIN, INPUT);   // Configure the rain sensor pin as an input
-  pinMode(LED_PIN, OUTPUT);          // Configure the LED pin as an output
+  Serial.begin(9600);                
+  pinMode(RAIN_SENSOR_PIN, INPUT);   
+  pinMode(LED_PIN, OUTPUT);          
 }
 
 void loop() {
-  // Update the state history
-  prev_rain_state = rain_state;             
-  
-  // Read the current state of the sensor (Digital logic: HIGH/LOW)
-  rain_state = digitalRead(RAIN_SENSOR_PIN); 
+  // Read the sensor: HIGH means dry, LOW means water detected
+  int rain_state = digitalRead(RAIN_SENSOR_PIN); 
 
-  // Detect the transition from 'Dry' to 'Rain' (LOW to HIGH)
-  if (prev_rain_state == LOW && rain_state == HIGH) { 
-    Serial.println("Rain detected!");
-    digitalWrite(LED_PIN, HIGH); // Activate the LED
+  // The Logic: Water = LED OFF. Dry = LED ON.
+  if (rain_state == LOW) { 
+    // Water is connecting the metal lines!
+    Serial.println("Rain detected! Turning LED OFF.");
+    digitalWrite(LED_PIN, LOW);  // Turn LED OFF
+  } 
+  else {
+    // The board is completely dry!
+    Serial.println("It is dry! Turning LED ON.");
+    digitalWrite(LED_PIN, HIGH); // Turn LED ON
   }
-  // Detect the transition from 'Rain' to 'Dry' (HIGH to LOW)
-  else if (prev_rain_state == HIGH && rain_state == LOW) { 
-    Serial.println("Rain stopped!");
-    digitalWrite(LED_PIN, LOW);  // Deactivate the LED
-  }
+  
+  delay(100); // Small pause to stabilize readings
 }
